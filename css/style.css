@@ -106,7 +106,7 @@
 
 @media only screen and (max-width: 479px) {
   .container {
-    max-width: 320px; } }
+    max-width: 400px; } }
 
 /**
  * Reset Styels
@@ -1519,6 +1519,12 @@ body.template-color-23 .text-color {
 
 .pt--600 {
   padding-top: 600px; }
+
+.pt--700 {
+  padding-top: 700px; }
+
+.pt--800 {
+  padding-top: 800px; }
 
 @media only screen and (max-width: 575px) {
   .pt_sm--5 {
@@ -4901,6 +4907,9 @@ Section Separation
     padding-bottom: 90px; }
   .pb_sm--95 {
     padding-bottom: 95px; }
+	.pt_sm--300 {
+    padding-top: 300px;
+	}
   .pb_sm--100 {
     padding-bottom: 100px; }
   .pb_sm--105 {
@@ -7066,8 +7075,24 @@ button.brook-btn {
     color: #222222; }
   a.brook-btn.bk-btn-green,
   button.brook-btn.bk-btn-green {
-    background: #68AE4A;
+    background: #41b94a;
     color: #fff; }
+	.whatsapp-wrapper {
+		position: fixed;
+    right: 20px;
+    bottom: 60px;
+    overflow: hidden;
+    z-index: 9811 !important;
+	}
+	.whatsapp-wrapper > .bk-btn-green > i {
+		font-size: 25px;
+    vertical-align: middle;
+	}
+	.s_n_k {
+		color: #626262;
+    margin: 10px;
+    float: right;
+	}
   a.brook-btn.bk-btn-pink,
   button.brook-btn.bk-btn-pink {
     background: #f55d4e; }
@@ -7298,8 +7323,6 @@ a.moredetails-btn {
   box-shadow: none !important;
   margin: 0 !important; }
   .btn-essential:hover {
-    background: transparent !important;
-		border: 1px solid #dee2e6;
     color: #000 !important;
     -webkit-transform: translateY(0px) !important;
     -ms-transform: translateY(0px) !important;
@@ -8654,8 +8677,13 @@ Wavify Area
   display: grid; }
   @media only screen and (max-width: 767px) {
     .social-clint {
-      -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr); } }
+      -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr); }
+		.social-clint .clint-grid .grid-inner {
+			padding: 10px !important;
+			min-height: auto !important;
+			}
+		}
   .social-clint .clint-grid .grid-inner {
     position: relative;
     display: -webkit-box;
@@ -9261,7 +9289,6 @@ Contact Form Style 01
     font-size: 14px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    border-radius: 6px;
     -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
@@ -9524,7 +9551,7 @@ Contact Form Style 01
 .brook-icon-boxes-area .poss_relative {
   z-index: 2; }
 .brook-icon-boxes-area p.bk_pra {
-  padding: 0 60px;
+  /*padding: 0 60px;*/
 	color: #626262;
 }
 
@@ -9612,21 +9639,21 @@ Contact Form Style 01
   font-size: 36px; }
 
 .essential-cta h3 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.28;
   font-weight: 700;
   color: #000;
   margin-bottom: 10px; }
 
 .essential-cta p {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 100;
-  line-height: 1.89;
+  line-height: 1.5;
   color: #000;
   margin-bottom: 20px; }
 
 .essential-cta-content h3 {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.25;
   font-weight: 400;
   color: #000;
@@ -12152,6 +12179,7 @@ p.bk_pra {
   word-wrap: break-word;
   max-width: 100%;
   line-height: 1.58;
+	font-weight: 100;
   font-size: 16px;
   font-family: "Poppins", sans-serif; }
   @media only screen and (max-width: 767px) {
@@ -17982,7 +18010,7 @@ Main Components
     content: 'desktop'; } }
 
 a {
-  color: #267481;
+  color: #f87925;
   text-decoration: none; }
 
 /* -------------------------------- 
@@ -19212,6 +19240,7 @@ header.br_header.header-default.header-fixed {
   .manu-hamber.gray-version {
     color: #999; }
   .manu-hamber div {
+		float: right;
     position: relative;
     width: 24px;
     height: 18px;
@@ -19743,14 +19772,15 @@ Header Font Family
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      background: #fff; }
+      background: #000; }
       .popup-mobile-manu .inner .mobileheader .logo {
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
         flex-grow: 1; }
         .popup-mobile-manu .inner .mobileheader .logo a img {
-          width: 115px;
+					padding-top: 20px;
+					width: 100px;
           height: auto;
           max-width: 100%; }
       .popup-mobile-manu .inner .mobileheader a.mobile-close {
@@ -19768,7 +19798,7 @@ Header Font Family
           content: "";
           width: 24px;
           height: 3px;
-          background: #222;
+          background: #fff;
           -webkit-transform-origin: 50% 50%;
           -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -19795,7 +19825,10 @@ Header Font Family
   padding: 0;
   margin: 0;
   list-style: none;
-  margin: 20px 40px 30px; }
+  margin: 40px 40px 30px; }
+.object-custom-menu li {
+	padding: 15px 0;
+}
   .object-custom-menu li.has-mega-menu {
     position: relative;
     border-top: 1px solid transparent;
@@ -21468,6 +21501,9 @@ Prresentation Area
   .copyright .copyright-right ul.bk-copyright-menu li {
     padding: 5px 12px; }
     @media only screen and (max-width: 575px) {
+			.copyright .copyright-right {
+				position: relative !important;
+			}
       .copyright .copyright-left ul.bk-copyright-menu li,
       .copyright .copyright-right ul.bk-copyright-menu li {
         padding: 5px 6px; } }
@@ -21489,7 +21525,7 @@ Prresentation Area
   .copyright .copyright-right ul.bk-copyright-menu.minimal-copyright li a {
     font-weight: 700; }
 
-.copyright .copyright-right.text-md-left {
+.copyright .copyright-right {
 	position: absolute;
 	bottom: 0;
 }
@@ -21634,6 +21670,11 @@ body.template-color-1 .bg_color--2 {
 body.template-color-1 a.brook-btn.bk-btn-theme,
 body.template-color-1 button.brook-btn.bk-btn-theme {
   background: #f87925;
+  color: #fff; }
+
+body.template-color-1 a.brook-btn.bk-btn-purple,
+body.template-color-1 button.brook-btn.bk-btn-purple {
+  background: #9c005d;
   color: #fff; }
 
 body.template-color-1 a.moredetails-btn:hover {
