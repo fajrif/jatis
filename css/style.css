@@ -1046,10 +1046,11 @@ Animation Css
   background-size: cover; }
 
 .bg_image--1 {
-  background-image: url(../img/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+	background-image: url(../img/banner_graphic.png), url(../img/banner_bg.png);
+	background-position: center 70%, center center;
+	background-repeat: no-repeat, repeat;
+	background-size: 80%, cover;
+}
 
 .bg_image--2 {
   background-image: url(../img/bg.png);
@@ -4910,6 +4911,13 @@ Section Separation
 	.pt_sm--300 {
     padding-top: 300px;
 	}
+	.pt_sm--330 {
+    padding-top: 330px;
+	}
+	.bg_image--1 {
+	  background-position: center 60%, center center;
+    background-size: 95%, cover;
+	}
   .pb_sm--100 {
     padding-bottom: 100px; }
   .pb_sm--105 {
@@ -7024,8 +7032,8 @@ a.brook-btn,
 button.brook-btn {
   color: #fff;
   border-width: 0;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  /*-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);*/
+  /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);*/
   font-weight: 600;
   letter-spacing: 0em;
   font-family: "Poppins", sans-serif;
@@ -7224,9 +7232,10 @@ button.brook-btn {
     font-size: 16px; }
   a.brook-btn:hover,
   button.brook-btn:hover {
-    -webkit-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    transform: translateY(-3px); }
+    /*-webkit-transform: translateY(-3px);*/
+    /*-ms-transform: translateY(-3px);*/
+    /*transform: translateY(-3px); */
+	}
 
 a.moredetails-btn {
   font-weight: 600;
