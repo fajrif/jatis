@@ -4914,6 +4914,9 @@ Section Separation
 	.pt_sm--330 {
     padding-top: 330px;
 	}
+	.pt_sm--400 {
+    padding-top: 400px;
+	}
 	.bg_image--1 {
 	  background-position: center 60%, center center;
     background-size: 95%, cover;
@@ -12423,6 +12426,19 @@ List Area
 /* =====================
 Pricing Box 
 ========================*/
+.mainmenu-wrapper.jatismobile li.lavel-1 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.jatismobile li.lavel-1.link {
+	border-left: 1px solid #fff;
+}
+.jatismobile .page_nav ul.mainmenu li.lavel-1 > a {
+	font-size: 12px !important;
+}
+.jatismobile li.lavel-1.link span {
+	font-weight: 100;
+}
 .table td, .table th {
 	font-weight: 600;
 	border: 1px solid #dee2e6;
@@ -12439,6 +12455,7 @@ Pricing Box
 }
 .price-list.text-center {
 	font-size: larger;
+	vertical-align: middle;
 }
 .procing-wrap {
   margin-left: auto;
@@ -18224,7 +18241,7 @@ Main Components
   align-items: center; }
 
 /* ============================
-    Header Default Area 
+    Header Default Area
 ================================*/
 /* Maninmenu Area */
 .mainmenu-wrapper .page_nav ul.mainmenu {
@@ -18237,7 +18254,7 @@ Main Components
     display: inline-block;
     padding-top: 41px;
     padding-bottom: 41px;
-    padding-left: 0;
+    padding-left: 9px;
     padding-right: 9px; }
     .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1 > a {
       position: relative;
@@ -18248,8 +18265,8 @@ Main Components
       font-size: 16px;
       font-family: "Poppins", sans-serif;
       color: #f87925;
-      padding-top: 41px;
-      padding-bottom: 41px;
+      /*padding-top: 41px;*/
+      /*padding-bottom: 41px;*/
       padding-left: 45px;
       padding-right: 45px;
       -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -18426,16 +18443,41 @@ header.br_header.header-default.vertical-slide-portfolio {
       -ms-flex-align: center;
       align-items: center; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
+				.mainmenu-wrapper.jatismobile {
+					justify-content: center !important;
+				}
         .header-default .header__wrapper .header-left {
           -webkit-flex-basis: 30%;
           -ms-flex-preferred-size: 30%;
           flex-basis: 30%; } }
       @media only screen and (max-width: 767px) {
+				.mainmenu-wrapper.jatismobile img {
+					width: 6%;
+				}
+				.mainmenu-wrapper.jatismobile {
+					justify-content: center !important;
+				}
+				.mainmenu-wrapper.jatismobile ul.mainmenu li.lavel-1 > a {
+					font-size: 10px !important;
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
         .header-default .header__wrapper .header-left {
           -webkit-flex-basis: 30%;
           -ms-flex-preferred-size: 30%;
           flex-basis: 30%; } }
       @media only screen and (max-width: 575px) {
+				.mainmenu-wrapper.jatismobile img {
+					width: 6%;
+				}
+				.mainmenu-wrapper.jatismobile {
+					justify-content: center !important;
+				}
+				.mainmenu-wrapper.jatismobile ul.mainmenu li.lavel-1 > a {
+					font-size: 10px !important;
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
         .header-default .header__wrapper .header-left {
           -webkit-flex-basis: 50%;
           -ms-flex-preferred-size: 50%;
@@ -18515,6 +18557,9 @@ header.br_header.header-default.vertical-slide-portfolio {
           -ms-flex-preferred-size: 12%;
           flex-basis: 12%; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
+				.mainmenu-wrapper.jatismobile {
+					justify-content: center !important;
+				}
         .header-default .header__wrapper .header-right {
           -webkit-flex-basis: 70%;
           -ms-flex-preferred-size: 70%;
