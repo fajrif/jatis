@@ -9291,6 +9291,10 @@ Contact Form Style 01
   border-radius: 0;
   padding: 3px 20px;
   height: 62px; }
+.contact-form input[type="radio"] {
+	height: 15px;
+	width: 20px;
+}
   .contact-form input[type="submit"] {
     padding: 0 41px;
     height: 55px;

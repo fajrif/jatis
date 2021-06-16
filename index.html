@@ -157,6 +157,14 @@
 																						<label>Nomor Telepon</label>
                                             <input name="contact_phone" type="text">
                                         </div>
+                                        <div class="col-lg-12 mt--30 text-center">
+																						<input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck" checked="checked"> <label class="mr--20">Perusahaan</label>
+																						<input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"> <label>Perorangan</label>
+                                        </div>
+                                        <div class="col-lg-12 mt--10" id="ifYes">
+																						<label>Nama Perusahaan</label>
+                                            <input name="contact_company" type="text">
+                                        </div>
                                         <div class="col-lg-12 mt--30">
 																						<label>Pertanyaan</label>
                                             <input name="contact_message" type="text">
@@ -779,5 +787,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+		<script type="text/javascript">
+			function yesnoCheck() {
+					if (document.getElementById('yesCheck').checked) {
+							document.getElementById('ifYes').style.display = 'block';
+					}
+					else document.getElementById('ifYes').style.display = 'none';
+			}
+		</script>
 </body>
 </html>
