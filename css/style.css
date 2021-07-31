@@ -4918,8 +4918,8 @@ Section Separation
     padding-top: 400px;
 	}
 	.bg_image--1 {
-	  background-position: center 60%, center center;
-    background-size: 95%, cover;
+	  background-position: center 50%, center center;
+    background-size: 140%, cover;
 	}
   .pb_sm--100 {
     padding-bottom: 100px; }
